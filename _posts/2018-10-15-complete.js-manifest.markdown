@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "`complete.js` project manifest"
+date:   2018-10-15 00:34:24 +0200
+categories: manifest
+---
+
+This project has been conveived as a companion for commander lib. It illustrates javascript state's management strategies usage based on environment variables.
