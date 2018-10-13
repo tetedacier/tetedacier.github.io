@@ -1,0 +1,15 @@
+
+title: tetedacier github pages
+email: fabien.jacq@gmail.com
+description: >-
+  Portofolio of github projects and their usage
+baseurl: ""
+url: "https://tetedacier.github.io"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed

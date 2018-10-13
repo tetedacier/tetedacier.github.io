@@ -3,4 +3,6 @@ index.js
 package.json
 package-lock.json
 tasks/*
-
+_site
+.sass-cache
+.jekyll-metadata
