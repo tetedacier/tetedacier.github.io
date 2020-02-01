@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @page :left {
+        margin: 1em 1em 1em 2em;
+      }
+      @page :right {
+        margin: 1em 1em 1em 2em;
+      }
+      body {
+        margin: 1em 1em 1em 2em;
+        padding: 0;
+        font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 14px
+      }
+      h1  {
+        text-align: center;
+      }
+      h2 {
+        margin: .75em 0;
+      }
+      h3 {
+        margin: 1em 0 .25em 0;
+      }
+      section ul,
+      section p {
+        margin: 0
+      }
+      section>div>ul {
+        padding-left: 1em
+      }
+      main{
+        display: flex;
+      }
+      aside {
+        flex: 1;
+        margin-right: 1em;
+      }
+
+      .icon {
+        text-decoration: none;
+      }
+      .icon svg{
+        vertical-align: -.15em;
+      }
+
+      main>section {
+        flex: 2;
+      }
+      aside .wrapper {
+        padding: 1em;
+        background: #333333;
+        color: white;
+      }
+      aside .wrapper img{
+        width: 100%;
+      }
+      aside .wrapper a{
+        color: #CCCCCC;
+      }
+      .formations>ul {
+        padding-left: 1em;
+        list-style-type: '➡️';
+      }
+      .formations>ul>li {
+        margin: .5em;
+      }
+      .formations p {
+        margin: 0;
+      }
+      section a{
+        color: #333333;
+      }
+      .formations,
+      section div {
+        break-inside: avoid;
+      }
+    </style>
+    <h1>
+      Fabien Jacq
+    </h1>
+    <main>
+      <aside>
+        <div class="wrapper">
+          <h2>🧑🏻‍💻 Contact</h2>
+          <p>
+            <a href="mailto:fabien.jacq@gmail.com">fabien.jacq@gmail.com</a>
+            <a href="https://www.linkedin.com/in/fabien-jacq-4080b043/" class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                style="width:1em;height:1em;"
+                viewBox="0 0 382 382"
+                version="1.1">
+                <rect
+                    y="24.207109"
+                    x="17.122103"
+                    height="331.81451"
+                    width="351.29831"
+                    id="rect102"
+                    style="fill:#ffffff" />
+                <path
+                    id="path56"
+                    d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889  C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056  H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806  c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1  s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73  c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079  c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426  c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472  L341.91,330.654L341.91,330.654z"
+                    style="fill:#0077B7;" />
+              </svg>
+            </a><br />
+            103 Avenue de la résistance<br />
+            28300 Mainvilliers
+          </p>
+          <h2>📖 Présentation</h2>
+          <p>
+            Ancien agent de maîtrise d'un laboratoire de contrôle de qualité agroalimentaire, j'ai été sensibilisé très tôt au processus de qualité en milieu industriel.
+          </p>
+          <p>
+            Durant cette expérience, j'ai appris à me servir des différentes technologies liées à la réalisation de site web utilisant des technologies Open Source. Ces technologies ont permis la réutilisation d'une interface de gestion des interventions et de maintenance préventive des différents instrument de mesure physique du laboratoire.
+          </p>
+          <p>
+            Ayant évolué vers des fonctions d'admistration système, j'ai changé de carrière en intégrant Sensio en devenant Developpeur Frontend en 2007. Dans cet activité j'ai pu mettre en application les différentes compétences que j'ai acquise au sujet des technologies xml, html, css et javascript.
+          </p>
+          <p>
+            Mon expertise sur le javascript m'a permis de me spécialisé sur l'architecture de solution complexe reposanr sur nodejs tout en continuant ma veille sur les différentes solutions de stockage de données et leur historisation.
+          </p>
+          <div class="formations">
+            <h2>🏫 Formations</h2>
+            <ul>
+              <li>
+                <p>1998 à 1999: DEUST @mrl</p>
+                <p>
+                  <strong><a href="https://www.linkedin.com/school/universit-paris-sud/">Université Paris Sud</a></strong></p>
+              </li>
+              <li>
+                <p>2013: Formation Professionnelles par <a href="https://delicious-insights.com">Delicious insights</a></p>
+                <ul>
+                  <li><a href=https://delicious-insights.com/fr/trainings/git-total">GIT TOTAL</a></li>
+                  <li><a href="https://delicious-insights.com/fr/trainings/node-js">NODE.JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <p>février à mars 2020: Formation en cours "Création et reprise d'Entreprise"</p>
+                <p>CCI d'Eure & Loire</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <section class="experiences">
+        <h2>
+          💼 Expériences
+        </h2>
+        <div>
+          <h3>
+            FullStack Developer
+            @ <strong>Hivebrite - Mars 2019 à octobre 2019</strong>
+          </h3>
+          <ul>
+            <li>Réécriture partielle du modules de messagerie instantanée intégré à la platteforme des communautés afin de corriger les problèmes rencontré par les membres des différentes communauté</li>
+            <li>Réécriture de l'interface et des services associé à l'administration des participants aux événement associés aux communautés afin d'en permettre la mise à l'échelle</li>
+            <li>Réalisation d'une étude permettant de mesurer le degré d'atteinte des WCAG 2.0 de la platteforme proposé aux communautés</li>
+            <li>POC sur la mise en place d'un sytème de suivi des niveaux d'atteintes des WCAG basé sur la réutilisation des tests cucumber existants</li>
+            <li>Amélioration de la couverture de tests</li>
+            <li>Technologies utilisées: Ruby on rails, nodejs, webpack, react, redux, bash, docker, git, axe</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            FullStack Developer
+            @ <strong>Padoa - Novembre 2018 à mars 2019</strong>
+          </h3>
+          <ul>
+            <li>Amélioration de la gestion des erreurs au sein de l'application frontend Angular</li>
+            <li>Réécriture de la solution destinée à la création du contenu et à l'envoi des emails</li>
+            <li>Conception et réalisation d'un système de notification des rendez-vous médicaux et de programmation des relances basé sur architecture d'event sourcing</li>
+            <li>Technologies utilisées: nodejs, CQRS, Angular, TypeScript, bash, postgresql, SMTP, docker, git</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            FullStack Developer
+            @ <strong>Dayuse - Juillet 2018 à octobre 2018</strong>
+          </h3>
+          <ul>
+            <li>Mise en place du nouveau système d'îcones et mise de tous leurs cas d'usage</li>
+            <li>Production et intégration des nouveaux templates de landing pages au sein de Symfony</li>
+            <li>Automatisation de la mise en place d'environnement de staging au sein d'aws</li>
+            <li>Amélioration des performances la chaîne de production Frontend</li>
+            <li>Technologies utilisées: nodejs, symfony 3, jquery, sass, bash, mysql, SEO, vagrant, git</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            FullStack Developer
+            @ <strong>OurCompany - Novembre 2017 à mai 2018</strong>
+          </h3>
+          <ul>
+            <li>Internalisation du service d'envoie d'email en repectant les normes actuelle (DMARC, OPENDKIM) sous forme d'un image docker afin d'en simplifier sa mise à l'échelle</li>
+            <li>Création d'un module npm de génération d'email basé sur Twig</li>
+            <li>Documentation des API publique (JSDoc) afin de faciliter une future rééctiture son utilisation par le module Intellisense de Visual Studio Code</li>
+            <li>Réalisation d'une tâche permettant la relance programmatique des utilisateur de la platteforme</li>
+            <li>Technologies utilisées: nodejs, angular, express, yarn, npm, git, postfix, jsdoc</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            Front End Lead Developer
+            @ <strong>Photobox - Mai 2016 à novembre 2017</strong>
+          </h3>
+          <ul>
+            <li>Mise à jour et amélioration des performance de la chaîne de construction des studios Html et Flex</li>
+            <li>Intégration des studios dans la chaîne de déploiement ansible</li>
+            <li>Élaboration des spécifications des systèmes externes dédié au stockage des thèmes</li>
+            <li>Gestion des PR et animations de la communauté de pratique web</li>
+            <li>Définition et réalisation d'une partie des tâches liés à la mise en place du protocole https par défaut</li>
+            <li>Formation et mise en place de gitflow sur les différents repository lié aux studios HTML5</li>
+            <li>Technologies utilisées: nodejs, backbone, marionette, react, ansible, docker, plato, esprima, bash, mysql, cucumber, gherkin</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            FullStack Developer
+            @ <strong>Viadeo - Septembre 2011 à mai 2016</strong>
+          </h3>
+          <ul>
+            <li>Mise en place d'un platteforme d'exposition des resources à l'intention des partenaire basé sur OAuth en utilisant ElasticBeanstalk et en respectant les standards de sécurité définies par l'OWASP</li>
+            <li>Mise en place d'une architecture de widgets performante</li>
+            <li>Identification du code mort de la patteforme Tomcat afin de simplifier la base de code existante</li>
+            <li>Mise en place de la partie applicative Frontend et définition de la nouvelle platteforme CQRS au sein de la cellule architecture</li>
+            <li>Mise en place des page de la première version companies Page basé sur le framework javascript interne (tetra)</li>
+            <li>Technologies utilisées: java, jenkins, tomcat, jsp, spring,xml/xsl,bash,ruby, puppet,css, bootstrap, less, sass,nodejs, grunt, testem,javascript, angularJs, jquery, prototype, tetra-js, tetra-ui,elastic beanstalk, oauth, vagrant,git, svn</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            Front End Developer​
+            @ <strong>L'Express - Janvier 2011 à septembre 2011</strong>
+          </h3>
+          <ul>
+            <li>Assistance technique sur la partie frontend des site liés aux différents magazine du groupe Roularta</li>
+            <li>Mise en place et dynamisation des templates du site de l'Entreprise</li>
+            <li>Réalisation des templates de réseaux social liés au magazine du groupe Roularta</li>
+            <li>Technologies utilisées: php, javascript, xml/xsl, shell script, css, svn</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            Front End Developer
+            @ <strong>Sensio - Février 2007 à janvier 2011</strong>
+          </h3>
+          <ul>
+            <li>Mise en place d'un système de génération de police</li>
+            <li>Mise en place d'un validateur W3C permettant d'assurer la qualité des templates livré aux clients</li>
+            <li>Réalisation de template accessible WCAG 1.0</li>
+            <li>Réalisation de templates pour les différents client de l'agence</li>
+            <li>Vérification du respect des templates html par les développeurs backend</li>
+            <li>Technologies utilisés: php, symfony 1.1 à 1.4, apache, Magento, css, html, javascript, flash/actionScript, svn</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            Agent de maîtrise/Administration système
+            @ <strong>Soredab, Easia travel, MTE, Pilote système - Mars 2000 à janvier 2007</strong>
+          </h3>
+          <ul>
+            <li>Technologies utilisées: svn, cvs, php, perl, Visio, bash, linux, windows NT/2000/XP/2003 server, outils de bureautique (suite Office)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
