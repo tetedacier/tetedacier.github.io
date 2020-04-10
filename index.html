@@ -8,16 +8,47 @@
     </head>
     <body>
         <h1>Archive pattern</h1>
-        <p>This page simple serve as a demo and example of repository extraction</p>
+        <p>This page simple serve as a demo, an example and a howto of repository extraction patterns</p>
         <h2>How it has been created</h2>
-        <pre><code class="sh">git checkout --orphan attic
+        <p>First you'll need to clean you working directory by storing all non commited changes (modified or untracked change) into a wip branch.</p>
+        <p>Then you can proceed with the following process </p>
+        <pre><code class="sh"># Creating an attic branch pointing at the root commit of the repository
+git checkout --orphan attic
 rm -rf *
+git rm *
+# create and edit index.html then pushing your content
 git add index.html
 git commit -m"Add the base page"
 git push --set-upstream origin attic
+
+# reference your newly created branch as a submodule
 git checkout master
-git submodule add -b attic git@github.com:tetedacier/tedacier.github.io attic
+git submodule add -b attic htpps://github.com/tetedacier/tedacier.github.io attic
+git add .
+git commit -m"Reference attic branch in master working tree"
 git push
+</code></pre>
+        <p>This trigger a page build and the index is now accessible at `https://tetedacier.github.io/attic/`</p>
+        
+        <p>If you need to update your `attic` folder content later, you'll need to do something like :</p>
+
+        <pre><code class="sh"># checkout and cleanup attic directory
+git checkout attic
+rm -rf attic
+
+# edit index.html and push its new content
+git add index.html
+git commit -m"Update the base page"
+git push
+
+# Update reference in master
+git checkout master
+git submodule update --init
+cd attic
+git pull
+cd -
+
+...
 </code></pre>
     </body>
 </html>
