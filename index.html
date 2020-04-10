@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Archive pattern</title>
+
+    </head>
+    <body>
+        <h1>Archive pattern</h1>
+        <p>This page simple serve as a demo and example of repository extraction</p>
+        <h2>How it has been created</h2>
+        <pre><code class="sh">git checkout --orphan attic
+rm -rf *
+git add index.html
+git commit -m"Add the base page"
+git push --set-upstream origin attic
+git checkout master
+git submodule add -b attic git@github.com:tetedacier/tedacier.github.io attic
+git push
+</code></pre>
+    </body>
+</html>
