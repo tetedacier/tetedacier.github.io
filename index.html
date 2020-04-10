@@ -40,15 +40,19 @@ rm -rf attic
 git add index.html
 git commit -m"Update the base page"
 git push
+# At this point nothing new has been published to the github page
 
 # Update reference in master
 git checkout master
 git submodule update --init
 cd attic
-git pull
+git pull origin attic
 cd -
-
-...
+git add attic
+git commit -m"Update attic submodule"
+git push
 </code></pre>
+    <p>At this point, after successfull page build on github side, you will have your new content available online.</p>
+
     </body>
 </html>
