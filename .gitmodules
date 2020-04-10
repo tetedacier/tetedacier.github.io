@@ -1,4 +1,4 @@
 [submodule "attic"]
 	path = attic
-	url = git@github.com:tetedacier/tetedacier.github.io
+	url = https://github.com/tetedacier/tetedacier.github.io
 	branch = attic
